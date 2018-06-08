@@ -1,0 +1,5 @@
+Initial min of our structure QMMM
+ &cntrl
+  imin=1, maxcyc=5000, ncyc=2000,
+  cut=8.0, ntb=1, ntc=2, ntf=2,
+ /

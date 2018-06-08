@@ -1,0 +1,19 @@
+#source atom parameters
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+
+#read pdb of system
+system=sequence {ACE LYS NME}
+
+#define a box size
+solvateOct system TIP3PBOX 20.0
+
+addionsrand system Cl- 0
+#useful command for sanity checks
+check system
+
+#combine everything into the files needed for the simulation
+saveamberparm system LYS.prmtop LYS.inpcrd
+
+#exit does not work!
+quit
